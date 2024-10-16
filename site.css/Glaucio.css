@@ -314,7 +314,7 @@ h1 {
     grid-template-columns: repeat(3,1fr);
     gap: 2em;
 }
-.project-item{
+   .project-item{
     background: #0e3457;
     padding: 4em 4em;
     border-left: 1px solid rgba(236, 239, 241, 0.07);
