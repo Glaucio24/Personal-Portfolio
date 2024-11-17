@@ -437,7 +437,7 @@ footer{
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     gap: 1rem; /* Space between the icons */
-    margin-top: 2rem; 
+  
 }
 
  .linkedinIcon, .twitterIcon {
@@ -466,7 +466,7 @@ footer{
 @keyframes fade {
     from{
       opacity: 0;
-      
+      transform: translateY(1rem);
     }  
     to{
       opacity: 1;
@@ -474,16 +474,17 @@ footer{
     0%{
       opacity: 0;
     }
-    100% {
+    90% {
         opacity: 1;
-       
+        transform: translateY(0);
     }
   }
   
   #home, #project, #about, #contact {
-      animation: fade 6s linear both;
+      animation: fade 5s linear both;
       animation-timeline: view();
-      animation-range: entry 50% cover 40%;
+      animation-range: entry 60% cover 50%;
+      overflow-x: hidden;
   }
 
 
@@ -501,6 +502,7 @@ footer{
 body {
     opacity: 0;
     animation: Pagefade 0.5s ease-in-out forwards;
+    animation-delay: 1s;
 }
 
 
