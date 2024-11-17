@@ -11,7 +11,7 @@ h2,
 h3 {
     margin: 0;
     padding: 0;
-    font-size: clamp();
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
     line-height: 1.1;
 }
 
@@ -57,8 +57,9 @@ header{
     background:#071e33
 }
 .nav-container{
-    width: 80em;
+    width: 100%;
     margin: auto;
+ 
 }
 @media (max-width:80em){
     .nav-container{
@@ -93,7 +94,7 @@ gap: 3em;
     color: var(--general__font__color);
 }
 .home, .about, .projects, .contact{
-margin-top: 4em;
+margin-top: 0;
 }
 .logo--img {
     width: 2em;
@@ -459,3 +460,48 @@ footer{
 .twitterIcon:hover {
     color: #222020; /* Twitter icon turns blue on hover */
 }
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+      transform: translateY(2rem);
+    }  
+    to{
+      opacity: 1;
+    }
+    0%{
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  #project, #about, #contact {
+      animation: fade 6s linear both;
+      animation-timeline: view();
+      animation-range: entry 50% cover 40%;
+  }
+
+
+  @keyframes Pagefade {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    opacity: 0;
+    animation: Pagefade 0.8s ease-in-out forwards;
+    animation-delay: 0.5s; 
+}
+
+
+  
