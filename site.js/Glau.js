@@ -19,6 +19,11 @@ const navSlider=()=>{
       burger.classList.toggle('atoggle');
   });
 }
+
+function redirectToLink(url) {
+    window.location.href = url;
+}
+
 const app=()=>{
     navSlider();
    
