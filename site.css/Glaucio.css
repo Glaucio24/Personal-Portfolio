@@ -39,11 +39,12 @@ body {
     line-height: var(--line__height);
     color: var(--general__font__color);
     background: var(--general--bg--color);
+    overflow-x: hidden;    
 }
 
 .home {
     position: relative;
-    height: 120vh;
+    height: 80vh;
     width: 100%;
     background-image: url(keyboard.jpg);
     background-size: cover;
@@ -144,7 +145,7 @@ h1 {
     padding-top: 10em;
     max-width: 80%;
     margin: 0 auto; 
-    /* border: 2px solid rgb(174, 91, 22);  */
+    
 }
 
 
@@ -214,7 +215,12 @@ h1 {
         width: 100%; /* Ensures the image takes up full width */
         border-radius: 8px; /* Keeps image corners rounded */
     }
-   
+   .home{
+    height: 80vh;
+   }
+   body{
+    overflow-x: hidden; 
+   }
 }
 
 @media screen and (max-width: 768px) {
@@ -602,17 +608,18 @@ footer{
 @keyframes fade {
     from{
       opacity: 0;
-      transform: translateY(1rem);
+      transform: translateX(5rem);
     }  
     to{
       opacity: 1;
     }
-    0%{
+    40%{
       opacity: 0;
+      transform: translateX(4rem);
     }
-    90% {
+    80% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(1rem);
     }
   }
   
@@ -626,7 +633,7 @@ footer{
   @keyframes Pagefade {
     0% {
         opacity: 0;
-        transform: translateY(2rem);
+        transform: translateX(5rem);
     }
     100% {
         opacity: 1;
