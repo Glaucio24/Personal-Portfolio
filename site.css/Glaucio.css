@@ -181,6 +181,41 @@ h1 {
     overflow: hidden;
     margin-top: 2em;
 }
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;  /* Smaller font for h1 on small phones */
+    }
+    .btn-container {
+        width: 100%;  /* Ensures the button container takes up full width */
+        padding: 0 10px;  /* Adds padding to avoid the button touching the screen edges */
+    }
+
+    .resume--btn {
+        width: 100%;  /* Makes the button take up the full width of the container */
+        font-size: 14px;  /* Makes the button text smaller for small screens */
+        padding: 12px 0;  /* Adjusts button padding for better appearance on small screens */
+    }
+    .about--grid {
+        grid-template-columns: 1fr;  /* Stack content vertically */
+        padding: 10px;  /* Adds some padding to the container */
+    }
+
+    .about--paragraph {
+        font-size: 14px; /* Slightly reduce the font size for smaller screens */
+        line-height: 1.4; /* Adjust line height for readability */
+        margin-bottom: 15px; /* Adds space below the text */
+    }
+
+    .img-wrapper {
+        margin-top: 20px; /* Adds space between the text and image */
+    }
+
+    .personal-img {
+        width: 100%; /* Ensures the image takes up full width */
+        border-radius: 8px; /* Keeps image corners rounded */
+    }
+   
+}
 
 @media screen and (max-width: 768px) {
     .links {
