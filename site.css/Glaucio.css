@@ -643,7 +643,7 @@ footer{
 
 body {
     opacity: 0;
-    animation: Pagefade 0.5s ease-in-out forwards;
+    animation: Pagefade 0.3s ease-in-out forwards;
     animation-delay: 1s;
 }
 
