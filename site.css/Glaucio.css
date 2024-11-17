@@ -342,16 +342,7 @@ h1 {
     display: flex;
     justify-content: space-around; 
 }
-
-.gitIcon{
-  font-size: 30px;
-  color:rgba(238, 232, 232, 0.534);
-}
-.gitIcon:hover{
-    color: var(--button--hover);
-    transition-duration: 1s;
-    color: white;
-}  
+ 
 .contact--info,
 form {
     display: flex;
@@ -424,4 +415,47 @@ footer{
         display:block;
         overflow-y: hidden;
     }
+    .socialIcons
+    {
+        font-size: 3rem;
+    }
+}
+
+.gitIcon{
+    font-size: 30px;
+    color:rgba(238, 232, 232, 0.534);
+  }
+  .gitIcon:hover{
+      color: var(--button--hover);
+      transition-duration: 1s;
+      color: white;
+  } 
+.social-container {
+    display: flex; /* Make this a flex container */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 1rem; /* Space between the icons */
+    margin-top: 2rem; 
+}
+
+ .linkedinIcon, .twitterIcon {
+    font-size: 30px; /* Adjust icon size */
+    color: #333; /* Default color for all icons */
+    transition: color 0.5s; /* Smooth transition on color change */
+}
+
+.linkedinIcon:hover, .twitterIcon:hover {
+    color: #014ea0; /* Change color on hover */
+}
+
+.linkedinIcon {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+.twitterIcon {
+    color: #000000; /* Set Twitter (X) icon color to black */
+}
+
+.twitterIcon:hover {
+    color: #222020; /* Twitter icon turns blue on hover */
 }
